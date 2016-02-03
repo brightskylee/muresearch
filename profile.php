@@ -1,33 +1,5 @@
 <?php
 
-/* This file is used to develop edit functionality by Saqiu
-
-    A Sample URL is: http://muresearch.missouri.edu/DEVELOPERS/qsq35/profile.php?name=Qiuming%20Yao
-
-    General Rule:
-
-    1. Check if the person is registered.
-    2. If the person is NOT registered. Then disable all edit function.
-    3. If the person registered. Then enable the edit function
-
-
-    Database (MySQL) to be updated if edit function is enabled:
-
-    (hostname, username, password, database name can be found in databaseConfig.php,
-     In this file the above four are referred as HOSTNAME, USERNAME, PASSWD, DATABASE Macro)
-
-    Table name: registeredUser;
-
-    You can login to the mysql database (database name is muresearch2), desc registeredUser to see my current table structure
-
-    or
-
-    select * from registeredUser to see sample data in it.
-
-
-*/
-
-
 include_once "databaseConfig.php";
 include_once "FixCertificate.php";
 include_once "vendor/autoload.php";
@@ -609,55 +581,6 @@ $unifiedName = $parser->getLast().", ".$parser->getFirst();
 
 </script>
 
-
-
-<!-- Hello Saqiu, This is where Qiuming would want you to add the "Add publication" functionality -->
-
-<!-- Basically, the users need to type in the following information to add a new publication:
-
-    1. Publication title.
-    2. URL of this publication.
-    3. An author list of the publication.
-
-    The data should be in the following format to meet my interface requirement with the graph database:
-
-    (if represented as a PHP array):
-
-    Array
-    (
-	    [title] => RNA-protein distance patterns in ribosomes reveal the mechanism of translational attenuation.
-        [url] => http://www.ncbi.nlm.nih.gov/pubmed/25326828
-        [people] => Array
-        (
-	        [0] => Array
-	        (
-		        [firstName] => DongMei
-                [lastName] => Yu
-                [affiliation] => Department of Biological Engineering, University of Missouri, Columbia, MO, 65211, USA.
-            )
-
-            [1] => Array
-            (
-	            [firstName] => Chao
-                [lastName] => Zhang
-                [affiliation] =>
-            )
-        )
-    )
-
-    1). This array must have three key-value pairs, the keys' name must be 'title', 'url', 'people'.
-    2). The title and url are just strings (It's the users responsibility to make the strings they type make sense, u don't need to do validation check. But title and url must NOT be null).
-    3). The people's value is another array, with each element has the three key-value pairs: firstName, lastName, affiliation. The firstName and lastName must have values but the affiliation
-        is nullable. However even when the affiliation's value is null, it has to present this key. Or it will fail my format check in my interface.
-
-    If translated in JSON format, it should have similar structure.
-
-    When user finished typing the above info. u need to translate the info into a JSON formated data.
-    And then *POST* this data to AddGraphDatabaseInterface.php file, then the data will be inserted into the graph database.(Preferred AJAX Call)
-
-    Feel free to have a look to the AddGraphDatabaseInterface.php file
-
-    -->
 
 <?php
 //if(isset($registered) && $registered==1){
