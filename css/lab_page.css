@@ -1,0 +1,134 @@
+form{
+	padding:0;
+}
+.row{
+	padding-bottom:20px;
+}
+.section{
+	margin-bottom:16px;
+	padding-bottom:0;
+}
+.white-btn{
+	background:transparent;
+	border:1px solid #2b5797;
+	border-radius:6px;
+	color:#2b5797;
+	font-size:17px;
+	padding:4px 12px;
+	outline:none;
+}
+.white-btn:hover{
+	background:#2b5797;
+	color:white;
+}
+.small-btn{
+	font-size:15px;
+}
+h3 input, h3 button{
+	background:transparent;
+	border:1px solid #fff;
+	border-radius:6px;
+	color:#fff;
+	font-size:18px;
+	padding:4px 12px;
+	float:right;
+	margin-right:10px;
+	outline:none;
+	/*min-width:70px;*/
+}
+h3 input:hover, h3 button:hover{
+	background:#fff;
+	color:#2b5797;
+}
+.content{
+	padding-left:25px;
+	padding-right:25px;
+}
+#lab-info div{
+	display:table-cell;
+}
+#lab-logo img{
+	max-width:460px;
+}
+#lab-name{
+	font-size:54px;
+	font-weight:bold;
+}
+#lab-link{
+	
+}
+#lab-text-info{
+	width:100%;
+	text-align:center;
+}
+#lab-text-info div{
+	display:block;
+	vertical-align:middle;
+}
+.add-new{
+	background:#f9f9f9;
+	
+}
+.project div{
+	vertical-align:top;
+}
+.project{
+	padding:16px 10px;
+}
+.project form{
+	display:inline-block;
+}
+.dotted{
+	border-top:1px dotted #ccc;
+}
+.member div{
+	display:inline-block;
+}
+.project div,#members .content div{
+	display:inline-block;
+	vertical-align:top;
+}
+.project-img{
+	height:160px;
+	/*width:220px;*/
+	width:24%;
+	background-position:center;
+	background-size:cover;
+	cursor:pointer;
+}
+.project-description{
+	padding:4px 5px;
+	margin-left:28px;
+	width:72%;
+}
+.add-new .project-description{
+	width:68%;
+}
+.delete-project-btn{
+	
+}
+.member{
+	width:50%;
+	padding-right:12px;
+	padding-bottom:18px;
+	
+}
+.member-img{
+	height:200px;
+	width:35%;
+	background-position:center;
+	background-size:cover;	
+}
+.member-info{
+	padding-left:15px;
+	padding-top:4px;
+	width:65%;
+}
+.member-info p{
+	width:100%;
+}
+.member-name{
+	font-weight:bold;
+	font-size:18px;
+	margin-bottom:4px;
+}

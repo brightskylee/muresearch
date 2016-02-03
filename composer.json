@@ -1,0 +1,8 @@
+{
+    "require": {
+        "everyman/neo4jphp": "dev-master",
+        "jasonpriem/human-name-parser": "dev-master",
+        "phpunit/phpunit": "^5.0",
+        "cboden/ratchet": "^0.3.3"
+    }
+}
